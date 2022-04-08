@@ -1,18 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Formular</title>
-</head>
+    <head>
+      <title>Projekt GLZ</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    </head>
 
-
+<!--
 <a> Bitte Felder ausfüllen</a>
 <form method="POST">
-    <input type="text" name="vorname" placeholder="Bitte geben Sie Ihren Namen ein">
+    <select>
+        <a> Was entsorgen?</a>
+        <option>PET</option>
+        <option>GLAS</option>
+        <option>KARTON</option>
+</select>
+    <input type="text" name="vorname" placeholder="Wie viele?">
+
     <button type="submit">Senden</button>
 </form>
-
+-->
 <body>
 
+<form method="POST">
+
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Was wollen Sie entsorgen?</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>PET</option>
+      <option>GLAS</option>
+      <option>KARTON</option>
+    </select>
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Kilogramm oder Anzahl Flaschen</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Kilogram</option>
+      <option>Anzahl</option>
+      <option>KARTON</option>
+    </select>
+  </div>
+
+
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Example select</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+
+<button type="submit">Senden</button>
+</form>
 </body>
 </html>

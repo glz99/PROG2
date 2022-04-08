@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ProjektGLZ</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='my_style.css') }}">
-
-</head>
+<html lang="en" >
+    <head>
+      <title>Projekt GLZ</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    </head>
 <body>
-<h1>Hallo {{ name }}!</h1>
-<a>Wie gehts?</a>
-<a href="{{link}}">Test</a>
-<br>
+<div class="container">
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="http://127.0.0.1:5000/form" class="nav-link">Jetzt Recyclen</a></li>
+        <li class="nav-item"><a href="#hier kommt noch ein Link rein" class="nav-link">Auswertungen</a></li>
+        <li class="nav-item"><a href="#hier kommt noch ein Link rein" class="nav-link">Entsorgungsalarm</a></li>
+        <li class="nav-item"><a href="#hier kommt noch ein Link rein" class="nav-link">About</a></li>
+      </ul>
+    </header>
+  </div>
+
+
 
 
 
 </body>
+
+
 </html>
