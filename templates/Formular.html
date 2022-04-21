@@ -3,23 +3,10 @@
     <head>
       <title>Projekt GLZ</title>
       <meta charset="utf-8">
-      <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
     </head>
 
-<!--
-<a> Bitte Felder ausfüllen</a>
-<form method="POST">
-    <select>
-        <a> Was entsorgen?</a>
-        <option>PET</option>
-        <option>GLAS</option>
-        <option>KARTON</option>
-</select>
-    <input type="text" name="vorname" placeholder="Wie viele?">
 
-    <button type="submit">Senden</button>
-</form>
--->
 <body>
 
 <form method="POST">
@@ -27,23 +14,23 @@
   <div class="form-group">
     <label for="exampleFormControlSelect1">Was wollen Sie entsorgen?</label>
     <select class="form-control" id="exampleFormControlSelect1">
-      <option>PET</option>
-      <option>GLAS</option>
-      <option>KARTON</option>
+      <option>Pet</option>
+      <option>Glas</option>
+      <option>Karton</option>
     </select>
   </div>
       <div class="form-group">
-    <label for="exampleFormControlSelect1">Kilogramm oder Anzahl Flaschen</label>
+    <label for="exampleFormControlSelect1">Gramm oder Anzahl Flaschen oder Karton</label>
     <select class="form-control" id="exampleFormControlSelect1">
-      <option>Kilogram</option>
+      <option>Gramm</option>
       <option>Anzahl</option>
-      <option>KARTON</option>
+      <option>Karton</option>
     </select>
   </div>
 
 
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Example select</label>
+    <label for="exampleFormControlSelect1">Anzahl</label>
     <select class="form-control" id="exampleFormControlSelect1">
       <option>1</option>
       <option>2</option>
