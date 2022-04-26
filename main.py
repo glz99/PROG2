@@ -16,6 +16,7 @@ def index():
 
 @app.route("/form", methods=["get", "post"])
 def form():
+
     if request.method.lower() == "get":
         return render_template("formular.html")
     if request.method.lower() == "post":

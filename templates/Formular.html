@@ -6,8 +6,24 @@
       <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
     </head>
 
+    <div class="container">
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+         <li class="nav-item"><a href="http://127.0.0.1:5000/" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="http://127.0.0.1:5000/form" class="nav-link">Jetzt Recyclen</a></li>
+        <li class="nav-item"><a href="http://127.0.0.1:5000/auswertung" class="nav-link">Auswertungen</a></li>
+        <li class="nav-item"><a href="http://127.0.0.1:5000/entsorgungsalarm" class="nav-link">Entsorgungsalarm</a></li>
+        <li class="nav-item"><a href="http://127.0.0.1:5000/About" class="nav-link">About</a></li>
+      </ul>
+    </header>
+  </div>
 
+Hallo, bitte hier eingeben was zu recyclen ist!
+    <br>
+    <br>
 <body>
+
+
 
 <form method="POST">
 
@@ -24,6 +40,7 @@
     <select class="form-control" id="exampleFormControlSelect1">
       <option>Gramm</option>
       <option>Anzahl</option>
+        <option>Kilogramm</option>
       <option>Karton</option>
     </select>
   </div>
@@ -37,6 +54,11 @@
       <option>3</option>
       <option>4</option>
       <option>5</option>
+        <option>100</option>
+      <option>200</option>
+      <option>300</option>
+      <option>400</option>
+      <option>500</option>
     </select>
   </div>
   <div class="form-group">
