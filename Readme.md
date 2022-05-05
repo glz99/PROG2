@@ -1,4 +1,4 @@
-# RecycleApp
+# Reasycle
 Quelle für Inhaltsverzeichnis: https://www.ionos.de/digitalguide/websites/web-entwicklung/readme-datei/
 https://github.com/FriendsOfREDAXO/markitup/blob/master/plugins/documentation/docs/de_de/howto_markdown.md#anker
 
