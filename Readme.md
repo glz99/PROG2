@@ -45,8 +45,8 @@ Die Installation der verschiedenen Programme war der erste Schritt. Danach erste
 <a name="ablaufdiagramm"></a>
 ### Ablaufdiagramm
 ***
-[Bildtext](Untitled%20Diagram.drawio(1).png "~~~~Ablaufdiagramm~~~~")
- 	
+
+![Image text](Untitled%20Diagram.drawio(1).png)"Ablaufdiagramm")
 <a name="selbstrefelxion"></a>
 ### Selbstreflexion
 ***
