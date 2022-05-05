@@ -46,7 +46,7 @@ Die Installation der verschiedenen Programme war der erste Schritt. Danach erste
 ### Ablaufdiagramm
 ***
 
-![Image text](Untitled%20Diagram.drawio(1).png)"Ablaufdiagramm")
+![Image text](Untitled%20Diagram.drawio(1).png)
 <a name="selbstrefelxion"></a>
 ### Selbstreflexion
 ***
