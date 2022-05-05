@@ -47,6 +47,7 @@ Die Installation der verschiedenen Programme war der erste Schritt. Danach erste
 ***
 
 ![Flowchart](Untitled%20Diagram.drawio(1).png)
+
 <a name="selbstrefelxion"></a>
 ### Selbstreflexion
 ***
