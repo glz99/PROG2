@@ -16,7 +16,7 @@ def index():
     return render_template("index.html")
 
 
-
+#Formularfeld
 @app.route("/form", methods=["get", "post"])
 def form():
 
@@ -26,7 +26,7 @@ def form():
         a=request.form.get("was")
         b=request.form.get("Masseinheit")
         c=request.form.get("anzahl")
-        meine_sammlung = {'was': a, "Masseinheit": b, "anzahl":c}
+        meine_sammlung = {'was': a, "Masseinheit": b,  "anzahl":c}
 
         data=opendatei()
         data.append(meine_sammlung)
@@ -37,17 +37,17 @@ def form():
 
 
 
-
+#Auswertungseite
 @app.route ("/auswertung")
 def auswertung():
     return render_template("auswertung.html")
 
-
+#Alarm
 @app.route ("/entsorgungsalarm")
 def entsorgungsalarm():
     return render_template("entsorgungsalarm.html")
 
-
+#Seite mit About
 @app.route ("/About")
 def about():
     return render_template("About.html")

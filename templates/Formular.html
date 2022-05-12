@@ -5,7 +5,7 @@
       <meta charset="utf-8">
       <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
     </head>
-
+<!-- Navigation-->
     <div class="container">
     <header class="d-flex justify-content-center py-3">
       <ul class="nav nav-pills">
@@ -23,13 +23,13 @@ Hallo, bitte hier eingeben was zu recyclen ist!
     <br>
 <body>
 
-
+<!-- Formularfelder-->
 
 <form method="POST">
 
   <div class="form-group">
     <label for="was">Was wollen Sie entsorgen?</label>
-    <select class="form-control"  name= "was" id="was">
+    <select class="form-control"  name= "was" id="was"> !<-- name und ID braucht es beide-->
       <option>Pet</option>
       <option>Glas</option>
       <option>Karton</option>
@@ -37,7 +37,7 @@ Hallo, bitte hier eingeben was zu recyclen ist!
   </div>
       <div class="form-group">
     <label for="Masseinheit">Gramm oder Anzahl Flaschen oder Karton</label>
-    <select class="form-control"  name= "Masseinheit" id="Masseinheit">
+    <select class="form-control"  name= "Masseinheit" id="Masseinheit">!<-- name und ID braucht es beide-->
       <option>Gramm</option>
       <option>Anzahl</option>
         <option>Kilogramm</option>
@@ -48,7 +48,7 @@ Hallo, bitte hier eingeben was zu recyclen ist!
 
   <div class="form-group">
     <label for="anzahl">Anzahl</label>
-    <select class="form-control"  name= "anzahl" id="anzahl">
+    <select class="form-control"  name= "anzahl" id="anzahl">!<-- name und ID braucht es beide-->
       <option>1</option>
       <option>2</option>
       <option>3</option>
