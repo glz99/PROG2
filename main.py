@@ -4,7 +4,8 @@ from flask import render_template
 from flask import request
 from daten import opendatei, storedatei
 import plotly
-from rechnen.co2 import co2_berechnen
+import json
+from rechnen.co2 import co2_sparen
 
 
 
@@ -59,14 +60,17 @@ def entsorgungsalarm():
 
 #Seite mit co2
 @app.route ("/co2")
-def about():
-    neue_ersparnis= co2_berechnen(5)
-    return "Die Ersparnis ist: " + str(neue_ersparnis) + " Gramm Co2"
+def c02():
+    co2 = co2_sparen()
+    return render_template("co2.html", co2=co2)
 
 
 
 
 
+
+
+"""Wenn der Name der Datei mit Main übereinstimmt, führt es die App auf dem Port 5000 aus"""
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
