@@ -5,7 +5,7 @@
       <meta charset="utf-8">
       <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
     </head>
-<!-- Navigation-->
+<!-- Navigation--, Link: https://getbootstrap.com/docs/5.1/examples/headers/-->
     <div class="container">
     <header class="d-flex justify-content-center py-3">
       <ul class="nav nav-pills">
@@ -13,7 +13,7 @@
         <li class="nav-item"><a href="http://127.0.0.1:5000/form" class="nav-link">Jetzt Recyclen</a></li>
         <li class="nav-item"><a href="http://127.0.0.1:5000/auswertung" class="nav-link">Auswertungen</a></li>
         <li class="nav-item"><a href="http://127.0.0.1:5000/entsorgungsalarm" class="nav-link">Entsorgungsalarm</a></li>
-        <li class="nav-item"><a href="http://127.0.0.1:5000/About" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="http://127.0.0.1:5000/co2" class="nav-link">Co2 sparen</a></li>
       </ul>
     </header>
   </div>
@@ -26,39 +26,54 @@ Hallo, bitte hier eingeben was zu recyclen ist!
 <!-- Formularfelder-->
 
 <form method="POST">
+<!--https://wiki.selfhtml.org/wiki/HTML/Tutorials/Formulare/input/time-->
 
   <div class="form-group">
-    <label for="was">Was wollen Sie entsorgen?</label>
-    <select class="form-control"  name= "was" id="was"> !<-- name und ID braucht es beide-->
+  <label for="date">Geben Sie ein Datum ein:</label>
+    <input id="date" name="Datum">
+  </div>
+
+
+
+  <div class="form-group">
+    <label for="Was">Was wollen Sie entsorgen?</label>
+    <select class="form-control"  name= "Was" id="Was"> !<-- name und ID braucht es beide-->
       <option>Pet</option>
       <option>Glas</option>
       <option>Karton</option>
     </select>
   </div>
       <div class="form-group">
-    <label for="Masseinheit">Gramm oder Anzahl Flaschen oder Karton</label>
+    <label for="Masseinheit">Masseinheit</label>
     <select class="form-control"  name= "Masseinheit" id="Masseinheit">!<-- name und ID braucht es beide-->
-      <option>Gramm</option>
       <option>Anzahl</option>
-        <option>Kilogramm</option>
-      <option>Karton</option>
+      <option>Gramm</option>
+
+
     </select>
   </div>
 
 
   <div class="form-group">
-    <label for="anzahl">Anzahl</label>
-    <select class="form-control"  name= "anzahl" id="anzahl">!<-- name und ID braucht es beide-->
+    <label for="Anzahl">Anzahl</label>
+    <select class="form-control"  name= "Anzahl" id="Anzahl">!<-- name und ID braucht es beide-->
       <option>1</option>
       <option>2</option>
       <option>3</option>
       <option>4</option>
       <option>5</option>
-        <option>100</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+      <option>100</option>
       <option>200</option>
       <option>300</option>
       <option>400</option>
       <option>500</option>
+      <option>600</option>
+
     </select>
   </div>
   <div class="form-group">

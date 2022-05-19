@@ -3,6 +3,11 @@ from flask import Flask
 from flask import render_template
 from flask import request
 from daten import opendatei, storedatei
+import plotly
+from rechnen.co2 import co2_berechnen
+
+
+
 
 
 app = Flask("Daten")
@@ -23,34 +28,40 @@ def form():
     if request.method.lower() == "get":
         return render_template("formular.html")
     if request.method.lower() == "post":
-        a=request.form.get("was")
-        b=request.form.get("Masseinheit")
-        c=request.form.get("anzahl")
-        meine_sammlung = {'was': a, "Masseinheit": b,  "anzahl":c}
+        a=request.form.get("Datum")  # Verknüpfung zu json
+        b=request.form.get("Was")   #Verknüpfung zu json
+        c=request.form.get("Masseinheit") #Verknüpfung zu json
+        d=request.form.get("Anzahl") #Verknüpfung zu json
+        meine_sammlung = {"Datum": a, 'Was': b, "Masseinheit": c,  "Anzahl": d}
 
         data=opendatei()
         data.append(meine_sammlung)
         storedatei(data)
 
-        return render_template("formular.html")
+        return render_template("formular.html", name="meine_sammlung")
 
 
 
 
 #Auswertungseite
 @app.route ("/auswertung")
-def auswertung():
-    return render_template("auswertung.html")
+def auswerten():
+    auswertungs_liste = [] #list erstellen leer für die HTML seite
+    data = opendatei()  #Json Datei öffnen
+    for element in data: # für jedes Element in der jason Datei soll es nun jeweils die Elemente zu der (neuen) auswertungs_liste dazutun
+        auswertungs_liste.append([element["Datum"],element["Was"], element["Masseinheit"], element["Anzahl"]])
+    return render_template("auswertung.html", liste=auswertungs_liste) #ausgabe des Htmls und der auswertungs_liste
 
 #Alarm
 @app.route ("/entsorgungsalarm")
 def entsorgungsalarm():
     return render_template("entsorgungsalarm.html")
 
-#Seite mit About
-@app.route ("/About")
+#Seite mit co2
+@app.route ("/co2")
 def about():
-    return render_template("About.html")
+    neue_ersparnis= co2_berechnen(5)
+    return "Die Ersparnis ist: " + str(neue_ersparnis) + " Gramm Co2"
 
 
 

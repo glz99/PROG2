@@ -13,11 +13,36 @@
         <li class="nav-item"><a href="http://127.0.0.1:5000/form" class="nav-link">Jetzt Recyclen</a></li>
         <li class="nav-item"><a href="http://127.0.0.1:5000/auswertung" class="nav-link">Auswertungen</a></li>
         <li class="nav-item"><a href="http://127.0.0.1:5000/entsorgungsalarm" class="nav-link">Entsorgungsalarm</a></li>
-        <li class="nav-item"><a href="http://127.0.0.1:5000/About" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="http://127.0.0.1:5000/co2" class="nav-link">Co2 sparen</a></li>
       </ul>
     </header>
   </div>
 <body>
+
+
+<!-- hier macht es eine Tabelle mit den drei Titeln die im Formularfeld sind-->
+<div class="m-5"> <!-- m5 rückt die Tabelle einwenig ein-->
+    <table class="table table-striped">
+        <thead class="thead-dark">
+        <th style="width: 30%" scope="col">Datum</th>
+            <th style="width: 10%" scope="col">Was</th>
+            <th style="width: 30%" scope="col">Masseinheit</th>
+            <th style="width: 30%" scope="col">Anzahl</th>
+        </thead>
+        <tbody>
+        <!-- es nimmt für jedes Element in dem Dict der Jason datei die Werte und macht sie in die Tabelle rein-->
+            {% for element in liste %}
+            <tr>
+                <!-- jinjacode - jedes Element der Liste [Pet, Anzahl, 3] wird zu der Tabelle hinzugefügt-->
+                <td class="vw-2">{{ element[0] }}</td>
+                <td>{{ element[1] }}</td>
+                <td>{{ element[2] }}</td>
+                <td>{{ element[3] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
 
 </body>
 </html>
