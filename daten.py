@@ -8,7 +8,7 @@ def opendatei():
         with open("daten2.json") as open_file:
             datei_inhalt = json.load(open_file)
     except FileNotFoundError:
-        datei_inhalt =[]
+        datei_inhalt = []
 
     return datei_inhalt
 

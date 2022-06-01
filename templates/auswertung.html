@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
-    <title>Auswertung</title>
+    <title>Projekt GLZ/Auswertung/</title>
 </head>
 
 <div class="container">
@@ -33,7 +33,7 @@
         <!-- es nimmt für jedes Element in dem Dict der Jason datei die Werte und macht sie in die Tabelle rein-->
             {% for element in liste %}
             <tr>
-                <!-- jinjacode - jedes Element der Liste [Pet, Anzahl, 3] wird zu der Tabelle hinzugefügt-->
+                <!-- jinjacode - jedes Element der Liste [Datum, Pet, Anzahl, 3] wird zu der Tabelle hinzugefügt-->
                 <td class="vw-2">{{ element[0] }}</td>
                 <td>{{ element[1] }}</td>
                 <td>{{ element[2] }}</td>

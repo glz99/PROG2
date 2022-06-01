@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-      <title>Projekt GLZ</title>
+      <title>Projekt GLZ/Jetzt Recyclen</title>
       <meta charset="utf-8">
       <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
     </head>
@@ -29,10 +29,10 @@ Hallo, bitte hier eingeben was zu recyclen ist!
 <!--https://wiki.selfhtml.org/wiki/HTML/Tutorials/Formulare/input/time-->
 
   <div class="form-group">
-  <label for="date">Geben Sie ein Datum ein:</label>
-    <input id="date" name="Datum">
+  <label  for="date">Geben Sie ein Datum ein:</label>
+    <input placeholder ="dd.mm.jjjj" id="date" name="Datum">
   </div>
-
+ <br>
 
 
   <div class="form-group">
@@ -43,8 +43,9 @@ Hallo, bitte hier eingeben was zu recyclen ist!
       <option>Karton</option>
     </select>
   </div>
+  <br>
       <div class="form-group">
-    <label for="Masseinheit">Masseinheit</label>
+    <label for="Masseinheit">Falls Sie Pet oder Glas augewählt haben, bitte "Anzahl" wählen. <br> Bei der Auswahl Karton, bitte wählen Sie "Gramm" aus.</label>
     <select class="form-control"  name= "Masseinheit" id="Masseinheit">!<-- name und ID braucht es beide-->
       <option>Anzahl</option>
       <option>Gramm</option>
@@ -53,7 +54,7 @@ Hallo, bitte hier eingeben was zu recyclen ist!
     </select>
   </div>
 
-
+ <br>
   <div class="form-group">
     <label for="Anzahl">Anzahl</label>
     <select class="form-control"  name= "Anzahl" id="Anzahl">!<-- name und ID braucht es beide-->

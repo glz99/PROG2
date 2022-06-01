@@ -3,9 +3,9 @@ from flask import Flask
 from flask import render_template
 from flask import request
 from daten import opendatei, storedatei
-import plotly
-import json
 from rechnen.co2 import co2_sparen
+from rechnen.alarm import rechnen1
+from rechnen.alarm import rechnen
 
 
 
@@ -34,12 +34,14 @@ def form():
         c=request.form.get("Masseinheit") #Verknüpfung zu json
         d=request.form.get("Anzahl") #Verknüpfung zu json
         meine_sammlung = {"Datum": a, 'Was': b, "Masseinheit": c,  "Anzahl": d}
+        #request holt Daten aus Formular und tut Sie in den Dictionary "meine_sammlung. Dann speichert es diese Daten
+        #in die json datei
 
-        data=opendatei()
-        data.append(meine_sammlung)
-        storedatei(data)
+        data=opendatei() #Datei öffnen von der Daten.py
+        data.append(meine_sammlung) #Daten zur json Datei hinzufügen
+        storedatei(data)  #Eingaben von daten2.json speichern
 
-        return render_template("formular.html", name="meine_sammlung")
+        return render_template("formular.html", name="meine_sammlung") #meine Sammlung ist daten2.json
 
 
 
@@ -56,7 +58,9 @@ def auswerten():
 #Alarm
 @app.route ("/entsorgungsalarm")
 def entsorgungsalarm():
-    return render_template("entsorgungsalarm.html")
+    alarm1 = rechnen()
+    alarm2 = rechnen1()
+    return render_template("entsorgungsalarm.html", alarm1=alarm1, alarm2=alarm2)
 
 #Seite mit co2
 @app.route ("/co2")
