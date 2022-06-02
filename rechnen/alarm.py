@@ -8,8 +8,11 @@ def get_data():
 
 def rechnen():
     obj = get_data() #Daten von der get_data Funktion werden gebraucht
+    global summeglas
     summeglas = 0
+    global summepet
     summepet = 0
+    global summekarton
     summekarton = 0
 
     for element in obj:
@@ -25,24 +28,31 @@ def rechnen():
         if element["Was"] == "Karton":
             summekarton = summekarton + float(element["Anzahl"])
 
-    return (summeglas, summepet, summekarton)
+    return  "Aktuelle Anzahl Glas:" + str(summeglas) + " Stück", "Aktuelle Anzahl Pet: " + str(summepet) + \
+            " Stück", "Aktuelle Anzahl Karton: " + str(summekarton) + " Gramm"
 
-if summeglas > 20:
-    print ("Glas muss entsorgt werden")
 
-else:
-    print ("Es hat noch Platz")
+def rechnen1():
 
-if summepet > 20:
-    print ("Pet muss entsorgt werden")
+    if summeglas > 20:
+        return "Glas muss entsorgt werden!"
 
-else:
-    print ("Es hat noch Platz")
+    else:
+        return "Es hat noch Platz im Glasbehälter!"
 
-if summekarton > 20:
-    print ("Pet muss entsorgt werden")
+def rechnen2():
+    if summepet > 20:
+        return "Pet muss entsorgt werden!"
 
-else:
-    print ("Es hat noch Platz")
+    else:
+        return "Es hat noch Platz im Petbehälter!"
+
+def rechnen3():
+    if summekarton > 500:
+        return "Karton muss entsorgt werden!"
+
+    else:
+        return "Es hat noch Platz im Kartonbehälter!"
+
 
 

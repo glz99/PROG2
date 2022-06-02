@@ -12,7 +12,7 @@ https://github.com/FriendsOfREDAXO/markitup/blob/master/plugins/documentation/do
 3. [Technologien](#technologien)
 4. [Funktionen](#funktionen)
 5. [Ablaufdiagramm](#ablaufdiagramm)
-6. [Selbstrefelxion](selbstrefelxion)
+6. [Selbstrefelxion](#selbstreflexion)
 7. [FAQs](#faqs)
 
 <a name="inhalt-des-projektes"></a>
@@ -51,14 +51,29 @@ Die Installation der verschiedenen Programme war der erste Schritt. Danach erste
 <a name="selbstrefelxion"></a>
 ### Selbstreflexion
 ***
-<a name="faqs"></a>
+Zum Start des Projektes hatte ich Schwierigkeiten zu starten. Es ging eine Weile 
+bis ich mich mit der Materie auseinanderzusetzen wagte. Als ich aber eimal gestartet
+hatte, ging es kontinuierlich voran. Durch Internetrecherche und durch hilfreiche
+Inputs der Dozenten, nahm das Projekt nach und nach Form an. Im Laufe des Projektes
+fing ich auch an die Zusammenhänge zu verstehen und das Ganze machte immer mehr sind. Ich denke
+mein Zeitmanagement war nich so schlecht in diesem Projekt. Jedoch denke ich, für
+das nächste Mal würde ich doch früher starten, den Programmierung ist immer noch
+sehr aufwändig und braucht somit mehr Zeit als vielleicht am Anfang gedacht. Im Grossen
+und Ganzen bin ich sehr zufrieden mit dem Endergebnis und mit dem Learning, die ich 
+aus dem Projekt ziehen konnte. 
 ### FAQ's
 ***
 
-1. Frage 1
-2. Frage 2
-3. Frage 3
-4. Frage 4
+####1. Frage 1: Wo kann ich meine Angaben zum Recycling eingeben?
+Die Daten zum recycling können unter der Lasche "jetzt Recyclen" eingegeben werden. 
+####2. Frage 2: Wie wird berechnet wie viel Co2 gespart wurde?
+Es wurden Daten zu C02-Ersparnis aus einer Internetrecherche genommen. Diese Daten sind
+Richtwerte, welche auch abweichen können. Je nach Grösse kann es Abweichungen geben. Es wurde
+ein Durchschnittswert genommen. 
+####3. Frage 3: Wiso kann ich keine Dosen recyclen?
+Für diese Webapplikation hat sich der Entwickler für einige Funktionen entschieden. Diese
+könnten aber ohne grosse Probleme ergänzt werden. 
+
 
 
 

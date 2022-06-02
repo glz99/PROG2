@@ -31,7 +31,7 @@
         </thead>
         <tbody>
         <!-- es nimmt für jedes Element in dem Dict der Jason datei die Werte und macht sie in die Tabelle rein-->
-            {% for element in liste %}
+            {% for element in liste %} <!--dieses liste ist von der Definition von der Main (rot)-->
             <tr>
                 <!-- jinjacode - jedes Element der Liste [Datum, Pet, Anzahl, 3] wird zu der Tabelle hinzugefügt-->
                 <td class="vw-2">{{ element[0] }}</td>

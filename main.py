@@ -6,6 +6,8 @@ from daten import opendatei, storedatei
 from rechnen.co2 import co2_sparen
 from rechnen.alarm import rechnen1
 from rechnen.alarm import rechnen
+from rechnen.alarm import rechnen2
+from rechnen.alarm import rechnen3
 
 
 
@@ -19,7 +21,11 @@ app = Flask("__name__")
 #Hauptseite
 @app.route("/")
 def index():
-    return render_template("index.html")
+    alarm = rechnen()
+    alarm1 = rechnen1()
+    alarm2 = rechnen2()
+    alarm3 = rechnen3()
+    return render_template("index.html", alarm=alarm, alarm1=alarm1, alarm2=alarm2, alarm3=alarm3)
 
 
 #Formularfeld
@@ -58,9 +64,11 @@ def auswerten():
 #Alarm
 @app.route ("/entsorgungsalarm")
 def entsorgungsalarm():
-    alarm1 = rechnen()
-    alarm2 = rechnen1()
-    return render_template("entsorgungsalarm.html", alarm1=alarm1, alarm2=alarm2)
+    alarm = rechnen()
+    alarm1 = rechnen1()
+    alarm2 = rechnen2()
+    alarm3 = rechnen3()
+    return render_template("entsorgungsalarm.html", alarm=alarm, alarm1=alarm1, alarm2=alarm2, alarm3 = alarm3)
 
 #Seite mit co2
 @app.route ("/co2")

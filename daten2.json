@@ -1,56 +1,32 @@
 [
   {
-    "Datum": "12.02.2022",
+    "Datum": "02.06.2022",
     "Was": "Pet",
     "Masseinheit": "Anzahl",
-    "Anzahl": "1"
+    "Anzahl": "10"
   },
   {
-    "Datum": "12.02.2022",
-    "Was": "Pet",
-    "Masseinheit": "Anzahl",
-    "Anzahl": "1"
+    "Datum": "02.06.2022",
+    "Was": "Karton",
+    "Masseinheit": "Gramm",
+    "Anzahl": "600"
   },
   {
-    "Datum": "12.02.2022",
-    "Was": "Pet",
-    "Masseinheit": "Anzahl",
-    "Anzahl": "3"
+    "Datum": "02.06.2020",
+    "Was": "Karton",
+    "Masseinheit": "Gramm",
+    "Anzahl": "600"
   },
   {
-    "Datum": "12.02.2022",
+    "Datum": "02.06.2020",
     "Was": "Glas",
     "Masseinheit": "Anzahl",
-    "Anzahl": "7"
+    "Anzahl": "10"
   },
   {
-    "Datum": "12.02.2022",
-    "Was": "Karton",
-    "Masseinheit": "Gramm",
-    "Anzahl": "200"
-  },
-  {
-    "Datum": "12.02.2022",
-    "Was": "Pet",
+    "Datum": "02.06.2002",
+    "Was": "Glas",
     "Masseinheit": "Anzahl",
-    "Anzahl": "8"
-  },
-  {
-    "Datum": "12.02.2022",
-    "Was": "Pet",
-    "Masseinheit": "Anzahl",
-    "Anzahl": "1"
-  },
-  {
-    "Datum": "12.02.2022",
-    "Was": "Pet",
-    "Masseinheit": "Anzahl",
-    "Anzahl": "1"
-  },
-  {
-    "Datum": "12.02.2022",
-    "Was": "Karton",
-    "Masseinheit": "Gramm",
-    "Anzahl": "500"
+    "Anzahl": "100"
   }
 ]
