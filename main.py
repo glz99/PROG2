@@ -76,6 +76,12 @@ def c02():
     co2 = co2_sparen()
     return render_template("co2.html", co2=co2)
 
+#Seite mit statistik
+@app.route ("/statistik")
+def statistik():
+
+    return render_template("statistik.html")
+
 
 
 

@@ -1,24 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
-    <title>Projekt GLZ/Jetzt Co2 sparen</title>
-</head>
+{% include "header.html" %}
+{% include "navbar.html" %}
 
-
-<div class="container">
-    <header class="d-flex justify-content-center py-3">
-      <ul class="nav nav-pills">
-           <li class="nav-item"><a href="http://127.0.0.1:5000/" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="http://127.0.0.1:5000/form" class="nav-link">Jetzt Recyclen</a></li>
-        <li class="nav-item"><a href="http://127.0.0.1:5000/auswertung" class="nav-link">Auswertungen</a></li>
-        <li class="nav-item"><a href="http://127.0.0.1:5000/entsorgungsalarm" class="nav-link">Entsorgungsalarm</a></li>
-        <li class="nav-item"><a href="http://127.0.0.1:5000/co2" class="nav-link">Co2 sparen</a></li>
-      </ul>
-    </header>
-  </div>
 <body>
 <a> Du hast bis jetzt </a> {{co2}} <a> Gramm Co2 gespart.</a>
 </body>
-</html>

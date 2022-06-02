@@ -1,32 +1,14 @@
 [
   {
-    "Datum": "02.06.2022",
+    "Datum": "12.12.2022",
     "Was": "Pet",
     "Masseinheit": "Anzahl",
-    "Anzahl": "10"
-  },
-  {
-    "Datum": "02.06.2022",
-    "Was": "Karton",
-    "Masseinheit": "Gramm",
-    "Anzahl": "600"
-  },
-  {
-    "Datum": "02.06.2020",
-    "Was": "Karton",
-    "Masseinheit": "Gramm",
-    "Anzahl": "600"
-  },
-  {
-    "Datum": "02.06.2020",
-    "Was": "Glas",
-    "Masseinheit": "Anzahl",
-    "Anzahl": "10"
-  },
-  {
-    "Datum": "02.06.2002",
-    "Was": "Glas",
-    "Masseinheit": "Anzahl",
     "Anzahl": "100"
+  },
+  {
+    "Datum": "12.12.2022",
+    "Was": "Glas",
+    "Masseinheit": "Gramm",
+    "Anzahl": "8"
   }
 ]

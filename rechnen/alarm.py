@@ -28,8 +28,7 @@ def rechnen():
         if element["Was"] == "Karton":
             summekarton = summekarton + float(element["Anzahl"])
 
-    return  "Aktuelle Anzahl Glas:" + str(summeglas) + " Stück", "Aktuelle Anzahl Pet: " + str(summepet) + \
-            " Stück", "Aktuelle Anzahl Karton: " + str(summekarton) + " Gramm"
+    return "Aktuelle Anzahl Glas:" + str(summeglas) + " Stück Aktuelle Anzahl Pet: " + str(summepet) + " Stück Aktuelle Anzahl Karton: " + str(summekarton) + " Gramm"
 
 
 def rechnen1():

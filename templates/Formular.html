@@ -1,31 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-      <title>Projekt GLZ/Jetzt Recyclen</title>
-      <meta charset="utf-8">
-      <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
-    </head>
-<!-- Navigation--, Link: https://getbootstrap.com/docs/5.1/examples/headers/-->
-    <div class="container">
-    <header class="d-flex justify-content-center py-3">
-      <ul class="nav nav-pills">
-         <li class="nav-item"><a href="http://127.0.0.1:5000/" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="http://127.0.0.1:5000/form" class="nav-link">Jetzt Recyclen</a></li>
-        <li class="nav-item"><a href="http://127.0.0.1:5000/auswertung" class="nav-link">Auswertungen</a></li>
-        <li class="nav-item"><a href="http://127.0.0.1:5000/entsorgungsalarm" class="nav-link">Entsorgungsalarm</a></li>
-        <li class="nav-item"><a href="http://127.0.0.1:5000/co2" class="nav-link">Co2 sparen</a></li>
-      </ul>
-    </header>
-  </div>
+{% include "header.html" %}
+{% include "navbar.html" %}
 
-Hallo, bitte hier eingeben was zu recyclen ist!
+</div>
+
+<h2><center>Hallo, bitte hier eingeben was zu recyclen ist!</center></h2>
     <br>
     <br>
+
+<center>
 <body>
 
 <!-- Formularfelder-->
 
 <form method="POST">
+
 <!--https://wiki.selfhtml.org/wiki/HTML/Tutorials/Formulare/input/time-->
 
   <div class="form-group">
@@ -37,7 +25,7 @@ Hallo, bitte hier eingeben was zu recyclen ist!
 
   <div class="form-group">
     <label for="Was">Was wollen Sie entsorgen?</label>
-    <select class="form-control"  name= "Was" id="Was"> !<-- name und ID braucht es beide-->
+    <select style="margin: auto; width: 220px;"  class="form-control"  name= "Was" id="Was"> !<-- name und ID braucht es beide-->
       <option>Pet</option>
       <option>Glas</option>
       <option>Karton</option>
@@ -46,7 +34,7 @@ Hallo, bitte hier eingeben was zu recyclen ist!
   <br>
       <div class="form-group">
     <label for="Masseinheit">Falls Sie Pet oder Glas augewählt haben, bitte "Anzahl" wählen. <br> Bei der Auswahl Karton, bitte wählen Sie "Gramm" aus.</label>
-    <select class="form-control"  name= "Masseinheit" id="Masseinheit">!<-- name und ID braucht es beide-->
+    <select  style="margin: auto; width: 220px;" class="form-control"  name= "Masseinheit" id="Masseinheit">!<-- name und ID braucht es beide-->
       <option>Anzahl</option>
       <option>Gramm</option>
 
@@ -57,7 +45,7 @@ Hallo, bitte hier eingeben was zu recyclen ist!
  <br>
   <div class="form-group">
     <label for="Anzahl">Anzahl</label>
-    <select class="form-control"  name= "Anzahl" id="Anzahl">!<-- name und ID braucht es beide-->
+    <select style="margin: auto; width: 220px;" class="form-control"  name= "Anzahl" id="Anzahl">!<-- name und ID braucht es beide-->
       <option>1</option>
       <option>2</option>
       <option>3</option>
@@ -82,4 +70,4 @@ Hallo, bitte hier eingeben was zu recyclen ist!
 <button type="submit">Senden</button>
 </form>
 </body>
-</html>
+</center>
