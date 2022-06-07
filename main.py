@@ -8,6 +8,10 @@ from rechnen.alarm import rechnen1
 from rechnen.alarm import rechnen
 from rechnen.alarm import rechnen2
 from rechnen.alarm import rechnen3
+import json
+import plotly.express as px
+from plotly.offline import plot
+
 
 
 
@@ -21,10 +25,11 @@ app = Flask("__name__")
 #Hauptseite
 @app.route("/")
 def index():
-    alarm = rechnen()
+    alarm = rechnen() #diese Funktionen der anderen Datei erhalten hier Namen (alarn, alarm1 usw.)
     alarm1 = rechnen1()
     alarm2 = rechnen2()
     alarm3 = rechnen3()
+    #es soll die drei Funktionen returnen, bei welchen die Rechungen zur Entsorgung gemacht wurden
     return render_template("index.html", alarm=alarm, alarm1=alarm1, alarm2=alarm2, alarm3=alarm3)
 
 
@@ -32,7 +37,8 @@ def index():
 @app.route("/form", methods=["get", "post"])
 def form():
 
-    if request.method.lower() == "get":
+    if request.method.lower() == "get": #method get, post (Formularfelder) Daten werden abgeholt und dann weiter
+        #verarbeitet
         return render_template("formular.html")
     if request.method.lower() == "post":
         a=request.form.get("Datum")  # Verknüpfung zu json
@@ -53,37 +59,44 @@ def form():
 
 
 #Auswertungseite
-@app.route ("/auswertung")
+@app.route ("/auswertung", methods=["POST", "GET"])
 def auswerten():
+    if request.method.lower() == "get": #get post (Formular) für den Filter button auf der HTML seite
+        return render_template("auswertung.html")
+    if request.method.lower() == "post":
+        Was = request.form.get("Was")
     auswertungs_liste = [] #list erstellen leer für die HTML seite
     data = opendatei()  #Json Datei öffnen
-    for element in data: # für jedes Element in der jason Datei soll es nun jeweils die Elemente zu der (neuen) auswertungs_liste dazutun
-        auswertungs_liste.append([element["Datum"],element["Was"], element["Masseinheit"], element["Anzahl"]])
+    for element in data:
+        if element["Was"] == Was: #Element Was ist Pet, Glas oder Karton aus json liste
+            auswertungs_liste.append([element["Datum"],element["Was"], element["Masseinheit"], element["Anzahl"]])
+            # für jedes Element in der jason Datei soll es nun jeweils
+            # die Elemente zu der (neuen) auswertungs_liste dazutun
     return render_template("auswertung.html", liste=auswertungs_liste) #ausgabe des Htmls und der auswertungs_liste
+
+
 
 #Alarm
 @app.route ("/entsorgungsalarm")
 def entsorgungsalarm():
-    alarm = rechnen()
+    alarm = rechnen()  #diese Funktionen der anderen Datei erhalten hier Namen (alarn, alarm1 usw.)
     alarm1 = rechnen1()
     alarm2 = rechnen2()
     alarm3 = rechnen3()
+    # es soll die drei Funktionen returnen, bei welchen die Rechungen zur Entsorgung gemacht wurden
     return render_template("entsorgungsalarm.html", alarm=alarm, alarm1=alarm1, alarm2=alarm2, alarm3 = alarm3)
 
 #Seite mit co2
 @app.route ("/co2")
 def c02():
-    co2 = co2_sparen()
+    co2 = co2_sparen() #die Funktion der anderen Datei erhält hier einen Namen (co2 usw. und wird returned)
     return render_template("co2.html", co2=co2)
 
 #Seite mit statistik
 @app.route ("/statistik")
-def statistik():
 
+def get_data():
     return render_template("statistik.html")
-
-
-
 
 
 
@@ -92,3 +105,5 @@ def statistik():
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
+
+    #bei der Ausführung von FLASK wird der port 5000 verwendet. FLASK ist mit __name__ definiert

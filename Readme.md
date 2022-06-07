@@ -46,7 +46,12 @@ Die Installation der verschiedenen Programme war der erste Schritt. Danach erste
 ### Ablaufdiagramm
 ***
 
-![Flowchart](Untitled%20Diagram.drawio(1).png)
+![](Untitled_Diagram.drawio.png)
+
+Die zwei Menüpunkte "Co2 sparen" und "Statistik" werden nur zur 
+Veranschaulichung verwendet und sind nicht Teil des eigentlichen 
+Ablaufes. Somit sind diese nicht im Flussdiagramm
+enthalten. 
 
 <a name="selbstrefelxion"></a>
 ### Selbstreflexion
@@ -64,13 +69,13 @@ aus dem Projekt ziehen konnte.
 ### FAQ's
 ***
 
-####1. Frage 1: Wo kann ich meine Angaben zum Recycling eingeben?
+####Frage 1: Wo kann ich meine Angaben zum Recycling eingeben?
 Die Daten zum recycling können unter der Lasche "jetzt Recyclen" eingegeben werden. 
-####2. Frage 2: Wie wird berechnet wie viel Co2 gespart wurde?
+####Frage 2: Wie wird berechnet wie viel Co2 gespart wurde?
 Es wurden Daten zu C02-Ersparnis aus einer Internetrecherche genommen. Diese Daten sind
 Richtwerte, welche auch abweichen können. Je nach Grösse kann es Abweichungen geben. Es wurde
 ein Durchschnittswert genommen. 
-####3. Frage 3: Wiso kann ich keine Dosen recyclen?
+####Frage 3: Wiso kann ich keine Dosen recyclen?
 Für diese Webapplikation hat sich der Entwickler für einige Funktionen entschieden. Diese
 könnten aber ohne grosse Probleme ergänzt werden. 
 

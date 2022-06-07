@@ -10,5 +10,29 @@
     "Was": "Glas",
     "Masseinheit": "Gramm",
     "Anzahl": "8"
+  },
+  {
+    "Datum": "11.11.2022",
+    "Was": "Karton",
+    "Masseinheit": "Gramm",
+    "Anzahl": "600"
+  },
+  {
+    "Datum": "11.11.2022",
+    "Was": "Karton",
+    "Masseinheit": "Gramm",
+    "Anzahl": "600"
+  },
+  {
+    "Datum": "12.04.2022",
+    "Was": "Pet",
+    "Masseinheit": "Anzahl",
+    "Anzahl": "10"
+  },
+  {
+    "Datum": "12.04.2022",
+    "Was": "Glas",
+    "Masseinheit": "Anzahl",
+    "Anzahl": "7"
   }
 ]
