@@ -1,12 +1,17 @@
-"""
-def co2_berechnen(anzahl1, anzahl2, anzahl3): #Glasflasche 3.3 dl = 200gramm
+"""#Glasflasche 3.3 dl = 200gramm
     #Jede Tonne recyceltes Glas spart 670 kg CO2 ein.somit spart jedes Kilogramm Glas670 Gramm  c02
     # -> jede Flasche somit 134 Gramm c02
-    ersparnisglas = anzahl1 * 134
-    ersparnispet = anzahl2 * 236
-    ersparniskaron = anzahl3 * 2
-    gesamt = ersparniskaron + ersparnisglas + ersparnispet
-    return (gesamt)
+
+
+    #Jedes Kilogramm recyceltes Plastik spart 2.38kg kg CO2 ein.somit spart jede 100 Gramm Pet 238 Gramm  c02
+    ersparnis1 = anzahl1 * 236
+    return (ersparnis1)
+
+
+
+    #Jede Tonne  recyceltes Karton spart 2 Tonnen CO2 ein.somit spart jede 1 Gramm Karton 2 Gramm  c02
+    ersparnis2 = anzahl3 * 200
+    return (ersparnis2)
 """
 import json
 
@@ -16,6 +21,8 @@ def get_data():
         obj = json.load(file)
     return obj
 
+#mit dieser Funktion wird berechnet, wie viel C02 gespart wurde, hinsichtlich der eingegebenen Daten. (Es braucht die
+#Daten der json Datei als Grundlage der Berechnung)
 def co2_sparen():
     obj=get_data()
 
@@ -44,20 +51,6 @@ def co2_sparen():
 
 
 
-"""
-def co2_berechnen1(anzahl1): #Pet 5 dl = 100gramm
-    #Jedes Kilogramm recyceltes Plastik spart 2.38kg kg CO2 ein.somit spart jede 100 Gramm Pet 238 Gramm  c02
-    ersparnis1 = anzahl1 * 236
-    return (ersparnis1)
 
 
-def co2_berechnen2(anzahl3): #Karton 100 Gramm
-    #Jede Tonne  recyceltes Karton spart 2 Tonnen CO2 ein.somit spart jede 1 Gramm Karton 2 Gramm  c02
-    ersparnis2 = anzahl3 * 200
-    return (ersparnis2)
 
-
-def gesamt_co2():
-    gesamt=co2_berechnen() + co2_berechnen1() + co2_berechnen2()
-    return (gesamt)
-"""

@@ -15,14 +15,14 @@
 <form method="POST">
 
 <!--https://wiki.selfhtml.org/wiki/HTML/Tutorials/Formulare/input/time-->
-
+<!-- Formularfelder-->
   <div class="form-group">
   <label  for="date">Geben Sie ein Datum ein:</label>
     <input placeholder ="dd.mm.jjjj" id="date" name="Datum">
   </div>
  <br>
 
-
+<!-- Formularfeld Teil (Was)-->
   <div class="form-group">
     <label for="Was">Was wollen Sie entsorgen?</label>
     <select style="margin: auto; width: 220px;"  class="form-control"  name= "Was" id="Was"> !<-- name und ID braucht es beide-->
@@ -32,6 +32,8 @@
     </select>
   </div>
   <br>
+
+    <!-- Formularfeld Teil (Masseinheit)-->
       <div class="form-group">
     <label for="Masseinheit">Falls Sie Pet oder Glas augewählt haben, bitte "Anzahl" wählen. <br> Bei der Auswahl Karton, bitte wählen Sie "Gramm" aus.</label>
     <select  style="margin: auto; width: 220px;" class="form-control"  name= "Masseinheit" id="Masseinheit">!<-- name und ID braucht es beide-->
@@ -41,7 +43,7 @@
 
     </select>
   </div>
-
+<!-- Formularfeld Teil (wie viel)-->
  <br>
   <div class="form-group">
     <label for="Anzahl">Anzahl</label>
@@ -67,6 +69,7 @@
   </div>
   <div class="form-group">
 
+      <!-- Formularfeld Teil (Sendenbutton)-->
 <button type="submit">Senden</button>
 </form>
 </body>

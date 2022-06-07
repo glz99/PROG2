@@ -16,6 +16,7 @@ def rechnen():
     summekarton = 0
 
     for element in obj:
+        #hier kommt die Berechnung wie viel von Pet, Glas oder Karton bereits in der Liste sind
 
         if element["Was"] == "Glas":
             summeglas = summeglas + float(element["Anzahl"])
@@ -30,7 +31,8 @@ def rechnen():
 
     return "Aktuelle Anzahl Glas:" + str(summeglas) + " Stück Aktuelle Anzahl Pet: " + str(summepet) + " Stück Aktuelle Anzahl Karton: " + str(summekarton) + " Gramm"
 
-
+#mit der Anzahl von oben werden weitere Funktionen erstellt, wann es die Meldung machen soll, dass
+#entsotgt werden muss
 def rechnen1():
 
     if summeglas > 20:

@@ -38,9 +38,10 @@ Die Installation der verschiedenen Programme war der erste Schritt. Danach erste
 ### Funktionen
 ***
 1. Eingabe der täglichen Menge an Altglas, PET und Karton
-2. Auswertung wie viel ensorgt wurde
-3. Berechung wie viel C02 gespart wurde
-4. Erinnerung auf dem Bildschrim, wann ensorgt werden muss
+2. Auswertung wie viel entsorgt wurde
+3. Berechnung wie viel C02 gespart wurde
+4. Erinnerung auf dem Bildschirm, wann entsorgt werden muss (bei Glas ist dies der Fall, wenn es
+über 20 Flaschen sind, bei Pet ebenso und bei Karton, wenn über 1000 Gramm Karton vorhanden sind)
 
 <a name="ablaufdiagramm"></a>
 ### Ablaufdiagramm

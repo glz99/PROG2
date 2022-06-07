@@ -3,7 +3,7 @@
 
 
 <body>
-
+<!-- Code für den Button fürs Filtern mit den Optionen Pet, Glas und Karton-->
 <h2> <center><font color="green"> Hier siehst du was du alles recycled hast: </font></center></h2>
 <br>
 <div class="container">
@@ -26,6 +26,7 @@
 <div class="m-5"> <!-- m5 rückt die Tabelle einwenig ein-->
     <table class="table table-striped">
         <thead class="thead-dark">
+        <!-- th = Table head-->
         <th style="width: 30%" scope="col">Datum</th>
             <th style="width: 10%" scope="col">Was</th>
             <th style="width: 30%" scope="col">Masseinheit</th>
@@ -41,6 +42,7 @@
                 <td>{{ element[2] }}</td>
                 <td>{{ element[3] }}</td>
             </tr>
+        <!-- Endfor braucht es am Ende jedes Jinja-->
             {% endfor %}
         </tbody>
     </table>

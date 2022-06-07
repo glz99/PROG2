@@ -14,15 +14,12 @@ from plotly.offline import plot
 
 
 
-
-
-
 app = Flask("Daten")
 
 
 app = Flask("__name__")
 
-#Hauptseite
+"""Hauptseite"""
 @app.route("/")
 def index():
     alarm = rechnen() #diese Funktionen der anderen Datei erhalten hier Namen (alarn, alarm1 usw.)
@@ -33,7 +30,7 @@ def index():
     return render_template("index.html", alarm=alarm, alarm1=alarm1, alarm2=alarm2, alarm3=alarm3)
 
 
-#Formularfeld
+"""Formularfeld"""
 @app.route("/form", methods=["get", "post"])
 def form():
 
@@ -58,41 +55,42 @@ def form():
 
 
 
-#Auswertungseite
+"""Auswertungseite"""
+
 @app.route ("/auswertung", methods=["POST", "GET"])
 def auswerten():
     if request.method.lower() == "get": #get post (Formular) für den Filter button auf der HTML seite
         return render_template("auswertung.html")
     if request.method.lower() == "post":
-        Was = request.form.get("Was")
+        Was = request.form.get("Was") #refrenziert mit der unteren if Funktion
     auswertungs_liste = [] #list erstellen leer für die HTML seite
     data = opendatei()  #Json Datei öffnen
     for element in data:
-        if element["Was"] == Was: #Element Was ist Pet, Glas oder Karton aus json liste
+        if element["Was"] == Was: #Element Was ist Pet, Glas oder Karton aus json liste ansprechen
             auswertungs_liste.append([element["Datum"],element["Was"], element["Masseinheit"], element["Anzahl"]])
             # für jedes Element in der jason Datei soll es nun jeweils
-            # die Elemente zu der (neuen) auswertungs_liste dazutun
+            # die Elemente zu der  auswertungs_liste dazutun
     return render_template("auswertung.html", liste=auswertungs_liste) #ausgabe des Htmls und der auswertungs_liste
 
 
 
-#Alarm
+"""Alarm"""
 @app.route ("/entsorgungsalarm")
 def entsorgungsalarm():
     alarm = rechnen()  #diese Funktionen der anderen Datei erhalten hier Namen (alarn, alarm1 usw.)
     alarm1 = rechnen1()
     alarm2 = rechnen2()
     alarm3 = rechnen3()
-    # es soll die drei Funktionen returnen, bei welchen die Rechungen zur Entsorgung gemacht wurden
+    # es soll die drei Funktionen returnen, bei welchen die Rechnungen zur Entsorgung gemacht wurden
     return render_template("entsorgungsalarm.html", alarm=alarm, alarm1=alarm1, alarm2=alarm2, alarm3 = alarm3)
 
-#Seite mit co2
+"""Seite mit co2"""
 @app.route ("/co2")
 def c02():
     co2 = co2_sparen() #die Funktion der anderen Datei erhält hier einen Namen (co2 usw. und wird returned)
     return render_template("co2.html", co2=co2)
 
-#Seite mit statistik
+"""Seite mit statistik"""
 @app.route ("/statistik")
 
 def get_data():
