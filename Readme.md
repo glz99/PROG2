@@ -57,13 +57,15 @@ enthalten.
 ### Selbstreflexion
 ***
 Zum Start des Projektes hatte ich Schwierigkeiten zu starten. Es ging eine Weile 
-bis ich mich mit der Materie auseinanderzusetzen wagte. Als ich aber eimal gestartet
+bis ich mich mit der Materie auseinanderzusetzen wagte. Als ich aber einmal gestartet
 hatte, ging es kontinuierlich voran. Durch Internetrecherche und durch hilfreiche
-Inputs der Dozenten, nahm das Projekt nach und nach Form an. Im Laufe des Projektes
-fing ich auch an die Zusammenhänge zu verstehen und das Ganze machte immer mehr sind. Ich denke
-mein Zeitmanagement war nich so schlecht in diesem Projekt. Jedoch denke ich, für
+Inputs der Dozenten nahm das Projekt nach und nach Form an. Im Laufe des Projektes
+fing ich auch an die Zusammenhänge zu verstehen und das Ganze machte immer mehr Sinn. Ich denke,
+mein Zeitmanagement war nicht so schlecht in diesem Projekt. Jedoch denke ich, für
 das nächste Mal würde ich doch früher starten, den Programmierung ist immer noch
-sehr aufwändig und braucht somit mehr Zeit als vielleicht am Anfang gedacht. Im Grossen
+sehr aufwändig und braucht somit mehr Zeit als vielleicht am Anfang gedacht. Was am Schluss leider 
+nicht mehr geklappt hat, ist eine "ResetFunktion" für die Daten der Json Liste einzubauen. Man muss
+die Daten nun einfach noch manuell in der daten2.json löschen. Im Grossen
 und Ganzen bin ich sehr zufrieden mit dem Endergebnis und mit dem Learning, die ich 
 aus dem Projekt ziehen konnte. 
 ### FAQ's
