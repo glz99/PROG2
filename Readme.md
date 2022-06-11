@@ -12,7 +12,7 @@ https://github.com/FriendsOfREDAXO/markitup/blob/master/plugins/documentation/do
 3. [Technologien](#technologien)
 4. [Funktionen](#funktionen)
 5. [Ablaufdiagramm](#ablaufdiagramm)
-6. [Selbstrefelxion](#selbstreflexion)
+6. [Selbstreflexion](#selbstreflexion)
 7. [Infos zur Anwendung](#infos-zur-anwendung)
 8. [FAQs](#faqs)
 
@@ -23,12 +23,12 @@ https://github.com/FriendsOfREDAXO/markitup/blob/master/plugins/documentation/do
 Bei diesem Projekt geht es um eine Webapp. Die Webapp soll mit Pycharm programmiert werden. 
 Es geht dabei darum, verschiedenen Programmiersprachen einzusetzten und erste Erfahrungen mit Pycharm zu sammeln. 
 Meine Idee für das Projekt ist es eine Webapp zu programmieren, mit welcher man 
-sein Recyclingverhalten überwachen kann. Ausserdem sollte die Entsorgung des Altglas, PET und co. erleichtert werden. 
+sein Recyclingverhalten überwachen kann. Ausserdem sollte die Entsorgung des Altglases, PET und Co. erleichtert werden. 
 
 <a name="vorgehen"></a>
 ### Vorgehen
 ***
-Die Installation der verschiedenen Programme war der erste Schritt. Danach erstelle ich ein Github Profil. Weiter mussten ich das Wissen für die verschiednen Programme erlernen. Nachdem ich Kenntnisse darüber hatte, konnte ich die Webapp nach und nach programmieren. 
+Die Installation der verschiedenen Programme war der erste Schritt. Danach erstelle ich ein Github Profil. Weiter musste ich das Wissen für die verschiedenen Programme erlernen. Als ich Kenntnisse darüber hatte, konnte ich die Webapp nach und nach programmieren. 
 
 <a name="technologien"></a>
 ### Technologien
@@ -82,7 +82,8 @@ Zum Beispiel, wird das Diagramm angezeigt, jedoch mit einer Eingabe Verzögerung
 Das heisst, wenn ich eine Summe habe Pet: 10, Glas: 10 und Karton: 400 habe. Dann gebe ich im Formularfeld 5x Pet ein, dann 
 zeigt es immer noch die Summe Pet: 10, Glas: 10 und Karton: 400 an. Erst wenn ich nochmals etwas eingebe(z.B. 100 Gramm Karton) im 
 Formularfeld, werden die 5x Pet in das Diagramm übernommen. Da die Rechnung von Daten und die Datenspeicherung zur gleichen Zeit erfolgt, kann die aktuellste Summe nicht direkt 
-ins Diagramm einfliessen. Dies konnte ich auch durch viele Versuche nicht beheben. 
+ins Diagramm einfliessen. Dies konnte ich auch durch viele Versuche nicht beheben. Es müsste eine Verschachtelung der Funktionen erstellt
+werden, die garantiert, dass die Rechnung zuerst gemacht wird und dann diese aktuellste Summe in die json-Datei geladen wird. 
 
 ### FAQ's
 ***
