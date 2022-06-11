@@ -13,7 +13,7 @@ https://github.com/FriendsOfREDAXO/markitup/blob/master/plugins/documentation/do
 4. [Funktionen](#funktionen)
 5. [Ablaufdiagramm](#ablaufdiagramm)
 6. [Selbstrefelxion](#selbstreflexion)
-7. [Infos zur Anwendung](#anwendung)
+7. [Infos zur Anwendung](#infos-zur-anwendung)
 8. [FAQs](#faqs)
 
 
