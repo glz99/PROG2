@@ -13,7 +13,9 @@ https://github.com/FriendsOfREDAXO/markitup/blob/master/plugins/documentation/do
 4. [Funktionen](#funktionen)
 5. [Ablaufdiagramm](#ablaufdiagramm)
 6. [Selbstrefelxion](#selbstreflexion)
-7. [FAQs](#faqs)
+7. [Infos zur Anwendung](#anwendung)
+8. [FAQs](#faqs)
+
 
 <a name="inhalt-des-projektes"></a>
 ### Inhalt des Projektes
@@ -33,6 +35,9 @@ Die Installation der verschiedenen Programme war der erste Schritt. Danach erste
 ***
 1. Pycharm, Version 2021.3.2
 2. Flask
+3. Plotly
+4. Pandas
+
 
 <a name="funktionen"></a>
 ### Funktionen
@@ -69,6 +74,16 @@ nicht mehr geklappt hat, ist eine "ResetFunktion" für die Daten der Json Liste 
 die Daten nun einfach noch manuell in der daten2.json löschen. Im Grossen
 und Ganzen bin ich sehr zufrieden mit dem Endergebnis und mit dem Learning, die ich 
 aus dem Projekt ziehen konnte. 
+
+### Infos zur Anwendung 
+***
+Bei der Anwendung gib es noch einige Dinge, die nicht so funktionieren, wie eigentlich geplant. 
+Zum Beispiel, wird das Diagramm angezeigt, jedoch mit einer Eingabe Verzögerung. 
+Das heisst, wenn ich eine Summe habe Pet: 10, Glas: 10 und Karton: 400 habe. Dann gebe ich im Formularfeld 5x Pet ein, dann 
+zeigt es immer noch die Summe Pet: 10, Glas: 10 und Karton: 400 an. Erst wenn ich nochmals etwas eingebe(z.B. 100 Gramm Karton) im 
+Formularfeld, werden die 5x Pet in das Diagramm übernommen. Da die Rechnung von Daten und die Datenspeicherung zur gleichen Zeit erfolgt, kann die aktuellste Summe nicht direkt 
+ins Diagramm einfliessen. Dies konnte ich auch durch viele Versuche nicht beheben. 
+
 ### FAQ's
 ***
 

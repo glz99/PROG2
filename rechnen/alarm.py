@@ -1,4 +1,5 @@
 import json
+from daten1 import opendatei1, storedatei1
 
 #mit dieser Funktion kann in jeder anderen Datei in der die neusten Daten aufgerufen werden (mit from main import get_data)
 def get_data():
@@ -31,6 +32,8 @@ def rechnen():
 
     return "Aktuelle Anzahl Glas:" + str(summeglas) + " Stück Aktuelle Anzahl Pet: " + str(summepet) + " Stück Aktuelle Anzahl Karton: " + str(summekarton) + " Gramm"
 
+
+
 #mit der Anzahl von oben werden weitere Funktionen erstellt, wann es die Meldung machen soll, dass
 #entsotgt werden muss
 def rechnen1():
@@ -56,6 +59,6 @@ def rechnen3():
         return "Es hat noch Platz im Kartonbehälter!"
 
 
+def form1():
 
-
-
+    return summeglas, summepet, summekarton

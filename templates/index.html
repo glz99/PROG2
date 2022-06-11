@@ -10,19 +10,28 @@
 
 <br>
 
-<center><img src="{{ url_for('static', filename='reci.jpeg') }}" height="200px"></center>
+<center><img src="{{ url_for('static', filename='reci.jpeg') }}" height="180px"></center>
 <!--Quelle: https://www.pinterest.de/pin/211106301270540362/-->
 
 
-<h2><center> Aktuelle Lage zu deinem Recycling: </center> </h2>
+<h3><center> Aktuelle Lage zu deinem Recycling: </center> </h3>
 
 
 
 <!-- jinnjacode des alarm.py (Dort wird berechnet, wann entsorgt werden muss-->
 
-<h3> <center> {{alarm1}}</center></h3>
-<h3> <center> {{alarm2}}</center></h3>
-<h3> <center> {{alarm3}}</center></h3>
+<h5> <center> {{alarm1}}<form method="post" >
+    <input class="btn" type="submit" name="delete" value="Delete">
+</form></center></h5>
+
+<h5> <center> {{alarm2}}<form method="post" >
+    <input class="btn" type="submit" name="delete" value="Delete">
+</form></center></h5>
+<h5> <center> {{alarm3}}<form method="post" >
+    <input class="btn" type="submit" name="delete" value="Delete">
+</form></center></h5>
+
+<!--Quelle Button: https://stackoverflow.com/questions/10407433/how-do-i-get-my-html-button-to-delete-the-right-list-item-from-a-sqlite-database-->
 
 
 
