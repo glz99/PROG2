@@ -52,7 +52,7 @@ Die Installation der verschiedenen Programme war der erste Schritt. Danach erste
 ### Ablaufdiagramm
 ***
 
-![](Untitled_Diagram.drawio.png)
+![BildAblauf](Untitled_Diagram.drawio.png)
 
 Die zwei Menüpunkte "Co2 sparen" und "Statistik" werden nur zur 
 Veranschaulichung verwendet und sind nicht Teil des eigentlichen 
