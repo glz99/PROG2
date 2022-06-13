@@ -63,7 +63,7 @@ Die Installation der verschiedenen Programme war der erste Schritt. Danach erste
 9. Falls entsorgt werden muss wird dies auf dem Homescreen angezeigt
 10. Wenn entsorgt wurde, "Reset" klicken
 
-Prozess fertig. 
+Prozess fertig!
 
 ### Ablaufdiagramm
 ***
