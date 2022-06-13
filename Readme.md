@@ -11,10 +11,11 @@ https://github.com/FriendsOfREDAXO/markitup/blob/master/plugins/documentation/do
 2. [Vorgehen](#vorgehen)
 3. [Technologien](#technologien)
 4. [Funktionen](#funktionen)
-5. [Ablaufdiagramm](#ablaufdiagramm)
-6. [Selbstreflexion](#selbstreflexion)
-7. [Infos zur Anwendung](#infos-zur-anwendung)
-8. [FAQs](#faqs)
+5. [Walktrough](#walktrough)
+6. [Ablaufdiagramm](#ablaufdiagramm)
+7. [Selbstreflexion](#selbstreflexion)
+8. [Infos zur Anwendung](#infos-zur-anwendung)
+9. [FAQs](#faqs)
 
 
 <a name="inhalt-des-projektes"></a>
@@ -48,7 +49,20 @@ Die Installation der verschiedenen Programme war der erste Schritt. Danach erste
 4. Erinnerung auf dem Bildschirm, wann entsorgt werden muss (bei Glas ist dies der Fall, wenn es
 über 20 Flaschen sind, bei Pet ebenso und bei Karton, wenn über 1000 Gramm Karton vorhanden sind)
 
-<a name="ablaufdiagramm"></a>
+### Walktrough
+***
+
+1. Programm starten
+2. "Jetzt Recyclen" anklicken
+3. Daten eingeben (Sorte, Masseinheit und Menge)
+4. Sendenbutton klicken
+5. "Auswertung anklicken"
+6. Aus Dropdownfeld auswählen, welche Daten man sehen möchte
+7. Senden klicken
+8. Auswertung wird angezeigt
+9. Falls entsorgt werden muss wird dies auf dem Homescreen angezeigt
+10. Wenn entsorgt wurde, "Reset" klicken
+
 ### Ablaufdiagramm
 ***
 
