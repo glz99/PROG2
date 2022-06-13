@@ -20,23 +20,24 @@
 
 <!-- jinnjacode des alarm.py (Dort wird berechnet, wann entsorgt werden muss-->
 
-<h5> <center> {{alarm1}}<form method="post" >
-    <input class="btn" type="submit" name="delete" value="Delete">
-</form></center></h5>
+<h5> <center> {{alarm1}} </center></h5>
 
-<h5> <center> {{alarm2}}<form method="post" >
-    <input class="btn" type="submit" name="delete" value="Delete">
-</form></center></h5>
-<h5> <center> {{alarm3}}<form method="post" >
-    <input class="btn" type="submit" name="delete" value="Delete">
-</form></center></h5>
+<h5> <center> {{alarm2}}</center></h5>
+
+<h5> <center> {{alarm3}} </center></h5>
 
 <!--Quelle Button: https://stackoverflow.com/questions/10407433/how-do-i-get-my-html-button-to-delete-the-right-list-item-from-a-sqlite-database-->
 
-
+<form method="POST">
+    <!-- Mit dem Zurücksetzen-Button lösche ich alle Werte aus der liste_verfallsdatum -->
+    <div class="container">
+        <div class="col-md-12 text-center">
+            <button name="reset" value="reset" type="submit" class="btn btn-secondary">Reset</button>
+        </div>
+    </div>
+</form>
 
 
 </body>
 
 
-</html>

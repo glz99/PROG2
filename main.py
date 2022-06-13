@@ -21,12 +21,18 @@ app = Flask("Daten")
 app = Flask("__name__")
 
 """Hauptseite"""
-@app.route("/")
+@app.route("/", methods=["get", "post"])
 def index():
     alarm = rechnen() #diese Funktionen der anderen Datei erhalten hier Namen (alarm, alarm1 usw.)
     alarm1 = rechnen1()
     alarm2 = rechnen2()
     alarm3 = rechnen3()
+    # zurücksetzen der json für den ResetButton
+    if request.method == 'POST':
+        if request.form.get("reset") == "reset":
+            meine_sammlung = []
+            with open('daten2.json', 'w') as open_file:
+                json.dump(meine_sammlung, open_file, indent=3, separators=(',', ':'))
     #es soll die drei Funktionen returnen, bei welchen die Rechungen zur Entsorgung gemacht wurden
     return render_template("index.html", alarm=alarm, alarm1=alarm1, alarm2=alarm2, alarm3=alarm3)
 
@@ -57,20 +63,13 @@ def form():
         data.append(summe)  # Daten zur json Datei (summe.json) hinzufügen
         storedatei1(data)  # Eingaben von summe.json speichern
 
-
-
         #summe.json
         data=opendatei() #Datei öffnen von der Daten.py
         data.append(meine_sammlung) #Daten zur json Datei hinzufügen
         storedatei(data)  #Eingaben von daten2.json speichern
 
 
-
-
-
         return render_template("formular.html", name="meine_sammlung") #meine Sammlung ist daten2.json
-
-
 
 
 """Auswertungseite"""
@@ -90,17 +89,6 @@ def auswerten():
             # die Elemente zu der  auswertungs_liste dazutun
     return render_template("auswertung.html", liste=auswertungs_liste) #ausgabe des Htmls und der auswertungs_liste
 
-
-
-"""Alarm"""
-@app.route ("/entsorgungsalarm")
-def entsorgungsalarm():
-    alarm = rechnen()  #diese Funktionen der anderen Datei erhalten hier Namen (alarn, alarm1 usw.)
-    alarm1 = rechnen1()
-    alarm2 = rechnen2()
-    alarm3 = rechnen3()
-    # es soll die drei Funktionen returnen, bei welchen die Rechnungen zur Entsorgung gemacht wurden
-    return render_template("entsorgungsalarm.html", alarm=alarm, alarm1=alarm1, alarm2=alarm2, alarm3 = alarm3)
 
 """Seite mit co2"""
 @app.route ("/co2")

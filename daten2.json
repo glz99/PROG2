@@ -1,3 +1,14 @@
 [
-
+  {
+    "Datum": "12.02.2022",
+    "Was": "Glas",
+    "Masseinheit": "Anzahl",
+    "Anzahl": "9"
+  },
+  {
+    "Datum": "12.12.2022",
+    "Was": "Pet",
+    "Masseinheit": "Anzahl",
+    "Anzahl": "1"
+  }
 ]
