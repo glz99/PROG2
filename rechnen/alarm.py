@@ -17,7 +17,8 @@ def rechnen():
     summekarton = 0
 
     for element in obj:
-        #hier kommt die Berechnung wie viel von Pet, Glas oder Karton bereits in der Liste sind
+        #hier kommt die Berechnung wie viel von Pet, Glas oder Karton bereits in der Liste sind um
+        #nachher die Berechnung zu machen wann entsorgt werden muss
 
         if element["Was"] == "Glas":
             summeglas = summeglas + float(element["Anzahl"])
@@ -31,8 +32,10 @@ def rechnen():
             summekarton = summekarton + float(element["Anzahl"])
 
     return "Aktuelle Anzahl Glas:" + str(summeglas) + " Stück Aktuelle Anzahl Pet: " + str(summepet) + " Stück Aktuelle Anzahl Karton: " + str(summekarton) + " Gramm"
+#wird gebraucht um die json datei (summe.json) zu füllen mit den Summen der jeweiligen Sorten
+def form1():
 
-
+    return summeglas, summepet, summekarton
 
 #mit der Anzahl von oben werden weitere Funktionen erstellt, wann es die Meldung machen soll, dass
 #entsotgt werden muss
@@ -59,6 +62,4 @@ def rechnen3():
         return "Es hat noch Platz im Kartonbehälter!"
 
 
-def form1():
 
-    return summeglas, summepet, summekarton

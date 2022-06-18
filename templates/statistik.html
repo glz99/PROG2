@@ -3,6 +3,16 @@
 {% include "header.html" %}
 {% include "navbar.html" %}
 
+<!-- Button: https://getbootstrap.com/docs/4.0/components/forms/-->
+<form method="POST">
+    <!-- Mit dem Zurücksetzen-Button lösche ich alle Werte aus der liste_verfallsdatum -->
+    <div class="container">
+        <div class="col-md-12 text-center">
+            <button name="anzeigen" value="anzeigen" type="submit" class="btn btn-secondary">Statistik anzeigen/aktualisieren</button>
+        </div><!-- anzeigen, ist so definiert, wie in der MAIN-->
+    </div>
+</form>
+
 
 {{ viz_div|safe }}
 

@@ -91,14 +91,8 @@ aus dem Projekt ziehen konnte.
 
 ### Infos zur Anwendung 
 ***
-Bei der Anwendung gib es noch einige Dinge, die nicht so funktionieren, wie eigentlich geplant. 
-Zum Beispiel, wird das Diagramm angezeigt, jedoch mit einer Eingabe Verzögerung. 
-Das heisst, wenn ich eine Summe habe Pet: 10, Glas: 10 und Karton: 400 habe. Dann gebe ich im Formularfeld 5x Pet ein, dann 
-zeigt es immer noch die Summe Pet: 10, Glas: 10 und Karton: 400 an. Erst wenn ich nochmals etwas eingebe(z.B. 100 Gramm Karton) im 
-Formularfeld, werden die 5x Pet in das Diagramm übernommen. Da die Rechnung von Daten und die Datenspeicherung zur gleichen Zeit erfolgt, kann die aktuellste Summe nicht direkt 
-ins Diagramm einfliessen. Dies konnte ich auch durch viele Versuche nicht beheben. Es müsste eine Verschachtelung der Funktionen erstellt
-werden, die garantiert, dass die Rechnung zuerst gemacht wird und dann diese aktuellste Summe in die json-Datei geladen wird. 
-
+WICHTIG: Falls jemals Fehlermeldung "Summeglas not defined" angezeigt wird, dann muss im Pycharm noch einmal das Programm gestoppt werden
+und auf Run geklickt werden. 
 ### FAQ's
 ***
 

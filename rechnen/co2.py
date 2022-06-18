@@ -1,9 +1,11 @@
-"""#Glasflasche 3.3 dl = 200gramm
-    #Jede Tonne recyceltes Glas spart 670 kg CO2 ein.somit spart jedes Kilogramm Glas670 Gramm  c02
-    # -> jede Flasche somit 134 Gramm c02
+"""
+BERECHNUNG DER CO2-ERSPARNIS GLAS, KARTON, PET
+Glasflasche 3.3 dl = 200gramm
+    Jede Tonne recyceltes Glas spart 670 kg CO2 ein.somit spart jedes Kilogramm Glas670 Gramm  c02
+     -> jede Flasche somit 134 Gramm c02
 
 
-    #Jedes Kilogramm recyceltes Plastik spart 2.38kg kg CO2 ein.somit spart jede 100 Gramm Pet 238 Gramm  c02
+    Jedes Kilogramm recyceltes Plastik spart 2.38kg kg CO2 ein.somit spart jede 100 Gramm Pet 238 Gramm  c02
     ersparnis1 = anzahl1 * 236
     return (ersparnis1)
 

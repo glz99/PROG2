@@ -17,7 +17,9 @@ def opendatei():
 
 def storedatei(datei_inhalt):
     with open("daten2.json", "w") as open_file:
-        json.dump(datei_inhalt, open_file, indent=2) #datei_inhalt und open_file ist von oben (def opendatei)
+        # datei_inhalt und open_file ist von oben (def opendatei) und indent=2
+        # ist, dass es eine Auflistung gibt und nicht alle Werte nebeneinander
+        json.dump(datei_inhalt, open_file, indent=2)
 
 
 
