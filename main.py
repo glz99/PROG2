@@ -106,8 +106,7 @@ def c02():
 
 @app.route("/statistik", methods=["get", "post"])
 def stat():
-    # diese Funktionen der anderen Datei erhalten hier Namen (alarm, alarm1 usw.) (Summen, die es braucht
-    #um weiter zu rechnen für die Statistik
+    #diese Zwischenresultate aus den Funktionen braucht es für das Diagramm
     alarm = rechnen()
     alarm1 = rechnen1()
     alarm2 = rechnen2()
